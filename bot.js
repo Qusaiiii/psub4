@@ -1,5 +1,3 @@
-var ServerID = "507694894295416832";// اي دي الروم
-var ChannelID = "509700370533056512";
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -20,7 +18,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
 
 function timerFunc() {
     client.on('message', msg => {
-        client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
+        client.guilds.get('507694894295416832').channels.get('509700370533056512').send(Math.random().toString(36).substring(7))
 
 
     });
